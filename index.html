@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Portal</title>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='shortcut icon' type='image/png' href='/favicon.png'/>
+  <link href='https://fonts.googleapis.com/css?family=Spectral:300,400' rel='stylesheet'>
+  <link href='/providers.css' rel='stylesheet'>
+  <link href='/email.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div id='wrapper'>
+
+    <!--Connection Status for Providers  -->
+    <div id='provider-box'>
+      <div id='active-provider' class='provider'></div>
+      <div id='backup-provider' class='provider'></div>
+    </div>
+
+      <!-- Email form for manual submission -->
+      <form>
+          <div class='section-label'>Subject:</div>
+          <input id='subject' type='text' placeholder='Subject for Email'>
+          <div class='party'>
+            <div>
+              <div class='section-label'>To:</div>
+              <input id='to_name' type='text' placeholder='Name'>
+              <input id='to' type='text' placeholder='Email Address'>
+            </div>
+            <div>
+              <div class='section-label'>From:</div>
+              <input id='from_name' type='text' placeholder='Name'>
+              <input id='from' type='text' placeholder='Email Address'>
+            </div>
+          </div>
+          <div class='section-label'>Body:</div>
+          <textarea id='body' placeholder='Enter message here'></textarea>
+        <div class='submit' onclick='email.submit()'>SEND</div>
+      </form>
+
+  </div>
+
+  <script src='/browserClient.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "email_service",
+  "version": "1.0.0",
+  "description": "email service",
+  "author": {
+    "name": "Skye Blanding",
+    "email": "skyeright@gmail.com"
+  },
+  "license": "ISC",
+  "keywords": [
+    "node",
+    "express",
+    "email",
+    "service"
+  ],
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.3",
+    "node-fetch": "^1.7.1",
+    "request": "^2.81.0"
+  }
+}

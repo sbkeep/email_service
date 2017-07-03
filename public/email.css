@@ -1,0 +1,146 @@
+* {
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Spectral', sans-serif;
+  font-size: 16px;
+  cursor: default;
+  overflow-x: hidden;
+}
+
+#wrapper {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  background: rgba(100,140,200,.2);
+}
+
+
+form {
+  width: 70rem;
+  max-width: 90vw;
+  height: 50rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  border: 1px solid rgba(100,100,100,.2);
+  padding: 0rem 8rem;
+  background: rgba(230,248,236,.7);
+  border-radius: 1rem;
+
+}
+
+.section-label {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: rgba(140,140,140,1);
+}
+
+
+.party {
+  width: 50rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+input {
+  padding-left: 1rem;
+  height: 3rem;
+  width: 100%;
+  margin: .3rem 0;
+  font-size: 1rem;
+  border-radius: .35rem;
+  outline: none;
+  border: none;
+  background: blue;
+  background: white;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+    background: none;
+}
+
+#subject {
+  width: 40rem;
+}
+
+*::-webkit-input-placeholder {
+  color: rgba(20,20,20,.2);
+  font-size: 1rem;
+}
+
+*:focus {
+  box-shadow: 0 0 1px 1px rgba(100,100,100,1);
+  outline: none;
+  /*border: 1px solid rgba(0,191,255,.7);*/
+  box-sizing: border-box;
+}
+
+*:focus::-webkit-input-placeholder {
+  color: rgba(20,20,20,.1);
+
+}
+
+textarea {
+  height: 20rem;
+  padding: 1rem;
+  resize: vertical;
+  border: none;
+  font-size: 1.3rem;
+}
+
+.submit {
+  margin-top: 1rem;
+  width: 7rem;
+  height: 2.7rem;
+  font-size: 1.2rem;
+  background: rgba(70,30,150,.8);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .2s;
+  border-radius: .2rem;
+}
+
+.submit:hover {
+  background: rgba(70,30,150,1);
+  transform: scale(1.05);
+  transition: .4s;
+}
+
+.error {
+  border: 1px solid rgba(220,20,40,1);
+}
+
+
+
+@media screen and (max-width: 900px) {
+  html, body {
+    font-size: 8px;
+  }
+
+  form {
+    padding: 0 .5rem;
+    max-width: 98vw;
+    height: 70rem;
+  }
+
+  .party {
+    width: 100%;
+    flex-flow: column;
+  }
+}
